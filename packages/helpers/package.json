@@ -10,5 +10,8 @@
         "directory": "packages/errors",
         "type": "git",
         "url": "https://github.com/sftchance/romulus"
+    },
+    "dependencies": {
+        "wagmi": "^1.0.1"
     }
 }

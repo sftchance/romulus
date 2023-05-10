@@ -33,7 +33,7 @@
     },
     "scripts": {
         "preinstall": "npx only-allow pnpm",
-        "clean": "shx rm -rf ./artifacts ./cache ./coverage ./coverage.json ./dist ./docs ./src/types ./src/hooks.ts ./tsconfig.prod.tsbuildinfo",
+        "clean": "shx rm -rf ./artifacts ./cache ./coverage ./coverage.json ./dist ./docs ../types/src/protocol ./src/hooks.ts ./tsconfig.prod.tsbuildinfo",
         "clean:node_modules": "shx rm -rf ./node_modules",
         "build": "pnpm wagmi generate && pnpm hardhat prepare-package",
         "dev": "pnpm clean && pnpm hardhat coverage && REPORT_GAS=true pnpm hardhat test --fulltrace",
