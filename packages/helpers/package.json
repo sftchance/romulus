@@ -1,0 +1,14 @@
+{
+    "name": "@sftchance/romulus-helpers",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.ts",
+    "keywords": [],
+    "author": "",
+    "license": "AGPL-3.0-or-later",
+    "repository": {
+        "directory": "packages/errors",
+        "type": "git",
+        "url": "https://github.com/sftchance/romulus"
+    }
+}
