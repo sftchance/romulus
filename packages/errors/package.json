@@ -1,7 +1,47 @@
 {
     "name": "@sftchance/romulus-errors",
-    "version": "0.0.1",
     "description": "",
+    "version": "0.0.1",
+    "author": {
+        "name": "sftchance",
+        "email": "chance+sft@utc24.io",
+        "url": "https://utc24.io"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.59.5",
+        "@typescript-eslint/parser": "^5.59.5",
+        "eslint": "^8.40.0",
+        "eslint-config-prettier": "^8.8.0",
+        "prettier": "^2.8.8",
+        "shx": "^0.3.4",
+        "typescript": ">=4.5.0"
+    },
+    "bugs": {
+        "url": "https://github.com/sftchance/romulus/issues/"
+    },
+    "files": [
+        "/dist/**/*.d.ts",
+        "/dist/**/*.d.ts.map",
+        "/dist/**/*.js",
+        "/dist/**/*.js.map"
+    ],
+    "homepage": "https://github.com/sftchance/romulus/tree/main/packages/errors#readme",
     "main": "./dist/index.js",
-    "license": "ISC"
+    "private": true,
+    "repository": {
+        "directory": "packages/errors",
+        "type": "git",
+        "url": "https://github.com/sftchance/romulus"
+    },
+    "scripts": {
+        "build": "tsc --project ./tsconfig.json",
+        "clean": "shx rm -rf ./dist ./tsconfig.tsbuildinfo",
+        "clean:node_modules": "shx rm -rf ./node_modules",
+        "lint": "pnpm run lint:ts && pnpm run prettier:check",
+        "lint:ts": "eslint --config ../../.eslintrc.yaml --ignore-path ../../.eslintignore --ext .js,.ts .",
+        "prettier": "prettier --config ../../.prettierrc.js --ignore-path ../../.prettierignore --write \"**/*.{js,json,md,ts}\"",
+        "prettier:check": "prettier --check --config ../../.prettierrc.js --ignore-path ../../.prettierignore \"**/*.{js,json,md,ts}\"",
+        "watch": "yarn build --watch"
+    },
+    "types": "./dist/index.d.ts"
 }

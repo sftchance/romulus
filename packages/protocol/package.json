@@ -14,6 +14,7 @@
         "@nomicfoundation/hardhat-toolbox": "^2.0.0",
         "@nomiclabs/hardhat-ethers": "^2.0.0",
         "@nomiclabs/hardhat-etherscan": "^3.0.0",
+        "@sftchance/romulus-errors": "workspace:*",
         "@typechain/ethers-v5": "^10.1.0",
         "@typechain/hardhat": "^6.1.2",
         "@types/chai": "^4.2.0",
@@ -33,7 +34,7 @@
     },
     "scripts": {
         "preinstall": "npx only-allow pnpm",
-        "clean": "shx rm -rf ./artifacts ./cache ./coverage ./coverage.json ./dist ./docs ../types/src/protocol ./src/hooks.ts ./tsconfig.prod.tsbuildinfo",
+        "clean": "shx rm -rf ./artifacts ./cache ./coverage ./coverage.json ./dist ./docs ../types/src/protocol ../helpers/src/protocol/*.auto.ts ./tsconfig.prod.tsbuildinfo",
         "clean:node_modules": "shx rm -rf ./node_modules",
         "build": "pnpm wagmi generate && pnpm hardhat prepare-package",
         "dev": "pnpm clean && pnpm hardhat coverage && REPORT_GAS=true pnpm hardhat test --fulltrace",

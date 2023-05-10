@@ -1,1 +1,1 @@
-export * as protocol from './protocol/hooks';
+export * as protocol from "./protocol/";
