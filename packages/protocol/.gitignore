@@ -1,0 +1,33 @@
+.env
+
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hidden folders
+node_modules
+cache
+artifacts
+dist
+docs
+
+# Build outputs
+src/types
+hooks.ts
+
+# Files
+.DS_STORE
+
+*.env
+*.log
+*.tsbuildinfo
+.pnp.*
+coverage.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+**/.coverage_artifacts
+**/.coverage_cache
+**/.coverage_contracts 
